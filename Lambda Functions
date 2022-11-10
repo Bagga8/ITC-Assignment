@@ -1,0 +1,37 @@
+# double x
+result = lambda x: x * 2
+print(result(2))
+
+# add x and y
+result = lambda x, y: x + y
+print(result(6, 4))
+
+# max of x, y
+max = lambda x, y: x if x > y else y
+print(max(8, 5))
+
+# square numbers using map
+n = [4, 3, 2, 1]
+print(list(map(lambda x:x**2, n)))
+
+# filter numbers
+n = [4, 3, 2, 1]
+print(list(filter(lambda x:x>3,n)))
+
+# reduce
+from functools import reduce
+n = [4, 3, 2, 1]
+print(reduce(lambda x,y: x * y,n))
+
+
+
+
+
+
+
+
+
+
+
+
+
